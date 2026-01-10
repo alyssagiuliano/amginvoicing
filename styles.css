@@ -106,10 +106,17 @@ header {
     color: var(--charcoal);
     font-weight: 600;
     transition: color 0.3s ease;
+    padding-bottom: 4px;
 }
 
 .nav-links a:hover {
     color: var(--emerald-green);
+}
+
+.nav-links a.active {
+    color: var(--emerald-green);
+    border-bottom: 3px solid var(--emerald-green);
+    padding-bottom: 1px;
 }
 
 /* Hero Section */
@@ -118,6 +125,26 @@ header {
     color: var(--white);
     padding: 5rem 0;
     text-align: center;
+}
+
+/* Page Header (for separate pages) */
+.page-header {
+    background: linear-gradient(135deg, var(--emerald-green) 0%, #006633 100%);
+    color: var(--white);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    color: var(--white);
 }
 
 .hero-content {
@@ -630,5 +657,203 @@ section {
 
     .contact-form-wrapper {
         padding: 1.5rem;
+    }
+}
+
+/* Additional Styles for Separate Pages */
+
+/* Services Page Specific */
+.service-cta {
+    display: inline-block;
+    background-color: var(--emerald-green);
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.service-cta:hover {
+    background-color: #006633;
+    transform: translateY(-2px);
+}
+
+/* About Page Specific */
+.trust-section {
+    background-color: var(--white);
+    padding: 4rem 0;
+}
+
+.values-section {
+    background-color: var(--light-gray);
+    padding: 4rem 0;
+}
+
+.help-points {
+    max-width: 700px;
+    margin: 2rem auto 3rem;
+}
+
+.help-points ul {
+    list-style: none;
+}
+
+.help-points li {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--light-gray);
+    border-left: 4px solid var(--emerald-green);
+    color: var(--charcoal);
+}
+
+.subsection-title {
+    text-align: center;
+    color: var(--emerald-green);
+    margin: 3rem 0 2rem;
+}
+
+/* Contact Page Specific */
+.contact-info-section {
+    background-color: var(--light-gray);
+    padding: 4rem 0;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: var(--emerald-green);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+}
+
+.step h3 {
+    color: var(--emerald-green);
+    margin-bottom: 1rem;
+}
+
+.step p {
+    color: var(--text-gray);
+    margin: 0;
+}
+
+.contact-form-wrapper h3 {
+    color: var(--emerald-green);
+    margin-bottom: 1.5rem;
+}
+
+/* Homepage Specific - Services Preview */
+.services-preview {
+    background-color: var(--light-gray);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.service-preview-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem auto 3rem;
+    max-width: 900px;
+}
+
+.preview-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.preview-card:hover {
+    transform: translateY(-5px);
+}
+
+.preview-card h3 {
+    color: var(--emerald-green);
+    margin-bottom: 0.75rem;
+}
+
+.preview-card p {
+    color: var(--text-gray);
+    margin: 0;
+}
+
+.featured-preview {
+    border: 3px solid var(--emerald-green);
+}
+
+.preview-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--emerald-green);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: var(--emerald-green);
+    color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-section .cta-button {
+    background-color: var(--white);
+    color: var(--emerald-green);
+}
+
+.cta-section .cta-button:hover {
+    background-color: var(--light-gray);
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .service-preview-cards,
+    .process-steps {
+        grid-template-columns: 1fr;
     }
 }
