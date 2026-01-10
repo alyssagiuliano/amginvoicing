@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact AMG Invoicing - Get in touch for a free consultation about our invoicing and accounts receivable services.">
+    <title>Contact Us | AMG Invoicing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <h1>AMG INVOICING</h1>
+                        <p class="logo-tagline">Accounts Receivable Management | Invoicing | Cash Flow Support</p>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2 class="page-title">Let's Simplify Your Invoicing</h2>
+            <p class="page-subtitle">Get in touch for a free consultation</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Details</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:amginvoicing@gmail.com">amginvoicing@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:0437509248">0437 509 248</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Location:</strong>
+                        <p>Melbourne, servicing Australia</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Business Hours:</strong>
+                        <p>Monday - Friday<br>9:00 AM - 5:00 PM AEST</p>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h3>Send Us An Enquiry</h3>
+                    <form action="https://formspree.io/f/xkoowbpy" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="business">Business Type</label>
+                            <select id="business" name="business">
+                                <option value="">Select your industry</option>
+                                <option value="ndis">NDIS Provider / Support Worker</option>
+                                <option value="allied-health">Allied Health Professional</option>
+                                <option value="tradie">Tradie / Contractor</option>
+                                <option value="consultant">Consultant / Freelancer</option>
+                                <option value="agency">Small Agency / Sole Trader</option>
+                                <option value="coach">Coach / Trainer</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your business and how we can help..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ or Additional Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <h2 class="section-title">What Happens Next?</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>We'll Review Your Enquiry</h3>
+                    <p>We'll carefully review your message and business needs to understand how we can best help you.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Free Consultation</h3>
+                    <p>We'll reach out to schedule a free, no-obligation consultation to discuss your invoicing challenges and how we can solve them.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Customized Solution</h3>
+                    <p>We'll recommend the service tier that best fits your business and create a plan tailored to your needs.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Get Started</h3>
+                    <p>Once you're ready, we'll handle all the setup and start managing your invoicing so you can focus on what you do best.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AMG INVOICING</h3>
+                    <p>The steady hand behind your cash flow</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AMG Invoicing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
