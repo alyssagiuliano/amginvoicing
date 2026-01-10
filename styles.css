@@ -129,22 +129,32 @@ header {
 
 /* Page Header (for separate pages) */
 .page-header {
-    background: linear-gradient(135deg, var(--emerald-green) 0%, #006633 100%);
-    color: var(--white);
-    padding: 3rem 0;
+    background-color: #004D24 !important;
+    background-image: linear-gradient(135deg, #004D24 0%, #006633 100%) !important;
+    background: #004D24 !important;
+    color: #ffffff !important;
+    padding: 3rem 0 !important;
     text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header .container {
+    color: #ffffff !important;
 }
 
 .page-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: #ffffff !important;
 }
 
 .page-subtitle {
     font-size: 1.2rem;
     opacity: 0.95;
-    color: var(--white);
+    color: #ffffff !important;
 }
 
 .hero-content {
@@ -275,7 +285,8 @@ section {
 
 /* Services Section */
 .services {
-    background-color: var(--light-gray);
+    background-color: #f8f8f8;
+    padding: 4rem 0;
 }
 
 .services-grid {
@@ -286,12 +297,15 @@ section {
 }
 
 .service-card {
-    background-color: var(--white);
+    background-color: #ffffff !important;
     padding: 2.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .service-card:hover {
@@ -330,6 +344,7 @@ section {
 .service-features {
     list-style: none;
     margin-bottom: 2rem;
+    text-align: left;
 }
 
 .service-features li {
@@ -350,7 +365,7 @@ section {
     font-size: 1.1rem;
     color: var(--emerald-green);
     text-align: center;
-    margin: 0;
+    margin: 0 0 1rem 0;
 }
 
 /* Who We Help Section */
@@ -664,20 +679,28 @@ section {
 
 /* Services Page Specific */
 .service-cta {
-    display: inline-block;
-    background-color: var(--emerald-green);
-    color: var(--white);
-    padding: 0.75rem 2rem;
-    margin-top: 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
+    display: inline-block !important;
+    background-color: #004D24 !important;
+    background: #004D24 !important;
+    color: #ffffff !important;
+    padding: 1rem 2.5rem !important;
+    margin: 1rem auto 0 auto !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    text-align: center !important;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer !important;
+    border: none !important;
+    width: auto !important;
 }
 
 .service-cta:hover {
-    background-color: #006633;
+    background-color: #006633 !important;
+    background: #006633 !important;
     transform: translateY(-2px);
+    color: #ffffff !important;
 }
 
 /* About Page Specific */
@@ -820,14 +843,14 @@ section {
 
 /* CTA Section */
 .cta-section {
-    background-color: var(--emerald-green);
-    color: var(--white);
+    background-color: #004D24 !important;
+    color: #ffffff !important;
     padding: 4rem 0;
     text-align: center;
 }
 
 .cta-section h2 {
-    color: var(--white);
+    color: #ffffff !important;
     margin-bottom: 1rem;
 }
 
@@ -835,15 +858,16 @@ section {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     opacity: 0.95;
+    color: #ffffff !important;
 }
 
 .cta-section .cta-button {
-    background-color: var(--white);
-    color: var(--emerald-green);
+    background-color: #ffffff !important;
+    color: #004D24 !important;
 }
 
 .cta-section .cta-button:hover {
-    background-color: var(--light-gray);
+    background-color: #f8f8f8 !important;
 }
 
 /* Responsive adjustments for new sections */
