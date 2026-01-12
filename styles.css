@@ -115,7 +115,7 @@ header {
 
 .nav-links a.active {
     color: var(--emerald-green);
-    border-bottom: 3px solid var(--emerald-green);
+    border-bottom: 2px solid var(--emerald-green);
     padding-bottom: 1px;
 }
 
@@ -370,7 +370,7 @@ section {
 
 /* Who We Help Section */
 .who-we-help {
-    background-color: var(--white);
+    background-color: var(--light-gray);
 }
 
 .industries-grid {
@@ -381,23 +381,18 @@ section {
 }
 
 .industry {
-    background-color: var(--light-gray);
+    background-color: #004D24 !important;
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
     font-weight: 600;
-    color: var(--charcoal);
-    border-left: 4px solid var(--emerald-green);
-    transition: background-color 0.3s ease;
-}
-
-.industry:hover {
-    background-color: var(--medium-gray);
+    color: #ffffff !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* About Section */
 .about {
-    background-color: var(--light-gray);
+    background-color: #ffffff !important;
 }
 
 .about-content {
@@ -408,7 +403,6 @@ section {
 .about-text {
     font-size: 1.1rem;
     color: var(--text-gray);
-    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -446,14 +440,14 @@ section {
 /* Contact Section */
 .contact {
     background-color: var(--white);
-    padding: 5rem 0;
 }
 
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -569,7 +563,7 @@ section {
 }
 
 .footer-brand h3 {
-    color: var(--emerald-green);
+    color: #ffffff !important;
     margin-bottom: 0.5rem;
 }
 
@@ -706,11 +700,11 @@ section {
 /* About Page Specific */
 .trust-section {
     background-color: var(--white);
-    padding: 4rem 0;
+    padding: 0;
 }
 
 .values-section {
-    background-color: var(--light-gray);
+    background-color: var(--white);
     padding: 4rem 0;
 }
 
@@ -726,7 +720,7 @@ section {
 .help-points li {
     padding: 1rem;
     margin-bottom: 0.5rem;
-    background-color: var(--light-gray);
+    background-color: var(--white);
     border-left: 4px solid var(--emerald-green);
     color: var(--charcoal);
 }
@@ -788,9 +782,19 @@ section {
 
 /* Homepage Specific - Services Preview */
 .services-preview {
-    background-color: var(--light-gray);
+    background-color: var(--white);
     padding: 4rem 0;
     text-align: center;
+}
+
+.services-preview .cta-button {
+    background-color: #004D24 !important;
+    color: #ffffff !important;
+}
+
+.services-preview .cta-button:hover {
+    background-color: #006633 !important;
+    color: #ffffff !important;
 }
 
 .service-preview-cards {
